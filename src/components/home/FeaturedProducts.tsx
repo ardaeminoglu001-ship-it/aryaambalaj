@@ -8,21 +8,21 @@ export default function FeaturedProducts() {
     const featuredProducts = [
         {
             id: "1",
-            title: "Kraft Karton Çanta",
-            description: "Doğa dostu ve dayanıklı, perakende satışa uygun ambalaj",
-            image_url: "https://images.unsplash.com/photo-1596649774577-fbbe15a5105d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
-        },
-        {
-            id: "2",
-            title: "Baskılı Hışır Poşet",
-            description: "Marketler için sağlam, yüksek taşıma kapasiteli",
+            title: "Kilogramlık Poşet Çeşitleri",
+            description: "Dayanıklı ve yüksek taşıma kapasiteli, her gramaja uygun poşet seçenekleri",
             image_url: "https://images.unsplash.com/photo-1620055746359-994df7bc617f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
         },
         {
-            id: "3",
-            title: "Karton Bardak",
-            description: "Sıcak içecekler için sızdırmaz, kalın cidarlı yapılı",
+            id: "2",
+            title: "Karton Bardak Çeşitleri",
+            description: "Sıcak ve soğuk içecekler için sızdırmaz, çok çeşitli standart ebat ve hacimlerde",
             image_url: "https://images.unsplash.com/photo-1505252585461-04db1eb84625?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+        },
+        {
+            id: "3",
+            title: "Köpük Tabak Çeşitleri",
+            description: "Catering ve paket servisler için ideal, ısıyı koruyan hijyenik köpük (strafor) ürünler",
+            image_url: "https://images.unsplash.com/photo-1588964895597-cfccd6e2cb19?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
         }
     ];
 
