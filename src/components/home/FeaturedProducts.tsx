@@ -1,5 +1,8 @@
+"use client";
+
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
+import { motion } from "framer-motion";
 
 export default function FeaturedProducts() {
     const featuredProducts = [
@@ -24,20 +27,33 @@ export default function FeaturedProducts() {
     ];
 
     return (
-        <section className="py-24 bg-white">
+        <section className="py-24 bg-white overflow-hidden">
             <div className="max-w-7xl mx-auto px-4 md:px-8 lg:px-12">
-                <div className="text-center mb-16">
+                <motion.div
+                    initial={{ opacity: 0, y: 30 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true, margin: "-100px" }}
+                    transition={{ duration: 0.8 }}
+                    className="text-center mb-16"
+                >
                     <h2 className="text-3xl md:text-4xl font-serif font-bold text-gray-900 mb-4">
                         Öne Çıkan Ürünler
                     </h2>
                     <p className="text-gray-600 font-sans text-lg max-w-2xl mx-auto">
                         Müşterilerimiz tarafından en çok tercih edilen popüler ürünlerimiz
                     </p>
-                </div>
+                </motion.div>
 
                 <div className="grid md:grid-cols-3 gap-8">
-                    {featuredProducts.map((product) => (
-                        <div key={product.id} className="group rounded-2xl overflow-hidden border border-gray-100 hover:shadow-xl transition-all duration-300">
+                    {featuredProducts.map((product, index) => (
+                        <motion.div
+                            key={product.id}
+                            initial={{ opacity: 0, y: 50 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: true, margin: "-50px" }}
+                            transition={{ duration: 0.6, delay: index * 0.2 }}
+                            className="group rounded-2xl overflow-hidden border border-gray-100 hover:shadow-xl transition-all duration-300"
+                        >
                             <div className="aspect-[4/3] bg-gray-100 relative overflow-hidden">
                                 <img
                                     src={product.image_url}
@@ -49,11 +65,17 @@ export default function FeaturedProducts() {
                                 <h3 className="text-xl font-bold text-gray-900 mb-2">{product.title}</h3>
                                 <p className="text-gray-600">{product.description}</p>
                             </div>
-                        </div>
+                        </motion.div>
                     ))}
                 </div>
 
-                <div className="mt-16 flex justify-center">
+                <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true, margin: "-20px" }}
+                    transition={{ duration: 0.6, delay: 0.6 }}
+                    className="mt-16 flex justify-center"
+                >
                     <Link
                         href="/urunler"
                         className="inline-flex items-center gap-3 px-8 py-4 bg-primary-50 text-primary-800 rounded-full font-semibold hover:bg-primary-100 transition-all duration-300 group"
@@ -61,7 +83,7 @@ export default function FeaturedProducts() {
                         Tüm Ürünleri İncele
                         <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                     </Link>
-                </div>
+                </motion.div>
             </div>
         </section>
     );
