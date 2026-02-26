@@ -12,10 +12,11 @@ export default function AboutPage() {
         <div className="min-h-screen flex flex-col font-sans bg-gray-50">
             <Navbar />
 
-            <main className="flex-grow flex items-center justify-center py-20 px-4 md:px-8 lg:px-12">
-                <div className="w-full max-w-7xl mx-auto">
-                    <div className="bg-red-600 rounded-3xl p-8 md:p-12 lg:p-16 text-center shadow-2xl">
-                        <h1 className="text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-white mb-6">
+            <main className="flex-grow flex items-center justify-center py-20 px-4 md:px-8 lg:px-12 bg-red-600/90 relative">
+                {/* Optional: Add a subtle overlay or background image here if needed in the future */}
+                <div className="w-full max-w-7xl mx-auto relative z-10">
+                    <div className="text-center">
+                        <h1 className="text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-white mb-8">
                             15 Yıllık Tecrübe
                         </h1>
                         <p className="text-white text-lg md:text-xl font-sans leading-relaxed max-w-4xl mx-auto">
