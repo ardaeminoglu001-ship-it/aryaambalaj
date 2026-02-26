@@ -1,3 +1,6 @@
+import Link from "next/link";
+import { ArrowRight } from "lucide-react";
+
 export default function FeaturedProducts() {
     const featuredProducts = [
         {
@@ -48,6 +51,16 @@ export default function FeaturedProducts() {
                             </div>
                         </div>
                     ))}
+                </div>
+
+                <div className="mt-16 flex justify-center">
+                    <Link
+                        href="/urunler"
+                        className="inline-flex items-center gap-3 px-8 py-4 bg-primary-50 text-primary-800 rounded-full font-semibold hover:bg-primary-100 transition-all duration-300 group"
+                    >
+                        Tüm Ürünleri İncele
+                        <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                    </Link>
                 </div>
             </div>
         </section>

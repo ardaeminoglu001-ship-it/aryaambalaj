@@ -2,7 +2,6 @@ import Navbar from "@/components/layout/Navbar";
 import Hero from "@/components/home/Hero";
 import TrustSection from "@/components/home/TrustSection";
 import FeaturedProducts from "@/components/home/FeaturedProducts";
-import ProductGrid from "@/components/products/ProductGrid";
 import GoogleMapSection from "@/components/home/GoogleMapSection";
 import Footer from "@/components/layout/Footer";
 import WhatsAppFAB from "@/components/layout/WhatsAppFAB";
@@ -21,9 +20,6 @@ export default function Home() {
 
         {/* Öne Çıkan Ürünler */}
         <FeaturedProducts />
-
-        {/* Dinamik Ürün Grid'i (Kategoriler & Filtreleme) */}
-        <ProductGrid />
 
         {/* Harita */}
         <GoogleMapSection />
