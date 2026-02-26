@@ -1,4 +1,4 @@
-import { ShieldCheck, Truck, PercentCircle, ThumbsUp } from "lucide-react";
+import { ShieldCheck, PercentCircle, ThumbsUp } from "lucide-react";
 
 const features = [
     {
@@ -10,11 +10,6 @@ const features = [
         icon: <PercentCircle className="w-6 h-6 text-primary-800" />,
         title: "Toptan Alım Avantajı",
         description: "İşletmenizin maliyetlerini düşürmek için sipariş miktarınıza özel fiyatlandırma sunuyoruz."
-    },
-    {
-        icon: <Truck className="w-6 h-6 text-primary-800" />,
-        title: "Hızlı & Güvenli Teslimat",
-        description: "Ankara içi siparişlerinizde kendi araçlarımızla hızlı teslimat garantisi veriyoruz."
     },
     {
         icon: <ThumbsUp className="w-6 h-6 text-primary-800" />,
@@ -37,7 +32,7 @@ export default function TrustSection() {
                     </p>
                 </div>
 
-                <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
                     {features.map((feature, index) => (
                         <div
                             key={index}

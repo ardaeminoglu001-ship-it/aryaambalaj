@@ -16,13 +16,7 @@ export default function Hero() {
 
                     {/* Text Content */}
                     <div className="flex flex-col items-start space-y-8 max-w-2xl">
-                        <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary-50 border border-primary-100 text-primary-800 text-sm font-medium">
-                            <span className="relative flex h-2.5 w-2.5">
-                                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary-400 opacity-75"></span>
-                                <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-primary-600"></span>
-                            </span>
-                            Ankara içi aynı gün teslimat garantisi
-                        </div>
+
 
                         <h1 className="text-5xl md:text-6xl lg:text-7xl font-serif font-bold text-gray-900 leading-[1.15] tracking-tight">
                             Toptan Ambalajda <br />
@@ -42,14 +36,7 @@ export default function Hero() {
                                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                             </Link>
 
-                            <a
-                                href="https://wa.me/905424422857?text=Merhaba, toptan alım fiyat listesi rica ediyorum."
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="w-full sm:w-auto flex items-center justify-center gap-2 bg-white text-gray-800 border-2 border-gray-200 px-8 py-3.5 rounded-xl font-medium hover:border-gray-300 hover:bg-gray-50 transition-all duration-300 text-lg"
-                            >
-                                Fiyat Teklifi Al
-                            </a>
+
                         </div>
 
                         <div className="flex items-center gap-6 pt-6 text-sm font-medium text-gray-500">
@@ -75,18 +62,7 @@ export default function Hero() {
                                 </div>
                             </div>
 
-                            {/* Floating Element */}
-                            <div className="absolute -left-12 top-1/4 bg-white p-4 rounded-2xl shadow-xl shadow-black/5 animate-bounce-slow flex items-center gap-4">
-                                <div className="w-12 h-12 bg-green-50 rounded-full flex items-center justify-center flex-shrink-0">
-                                    <svg className="w-6 h-6 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                                    </svg>
-                                </div>
-                                <div>
-                                    <p className="font-bold text-gray-900">1000+</p>
-                                    <p className="text-xs text-gray-500 font-medium">Teslim Edilen Sipariş</p>
-                                </div>
-                            </div>
+
                         </div>
                     </div>
 
