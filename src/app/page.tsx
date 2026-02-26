@@ -1,6 +1,5 @@
 import Navbar from "@/components/layout/Navbar";
 import Hero from "@/components/home/Hero";
-import AboutSection from "@/components/home/AboutSection";
 import TrustSection from "@/components/home/TrustSection";
 import FeaturedProducts from "@/components/home/FeaturedProducts";
 import GoogleMapSection from "@/components/home/GoogleMapSection";
@@ -15,9 +14,6 @@ export default function Home() {
       <main className="flex-grow">
         {/* Giriş / Hero Alanı */}
         <Hero />
-
-        {/* Hakkımızda Alanı */}
-        <AboutSection />
 
         {/* Neden Biz / Güven Alanı */}
         <TrustSection />
