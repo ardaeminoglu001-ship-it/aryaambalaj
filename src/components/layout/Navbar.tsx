@@ -63,7 +63,7 @@ export default function Navbar() {
                             Katalog & Ürünler
                         </Link>
                         <Link
-                            href="/#hakkimizda"
+                            href="/hakkimizda"
                             className="text-gray-700 hover:text-primary-800 font-medium transition-colors"
                         >
                             Hakkımızda
@@ -115,7 +115,7 @@ export default function Navbar() {
                             Katalog & Ürünler
                         </Link>
                         <Link
-                            href="/#hakkimizda"
+                            href="/hakkimizda"
                             onClick={() => setIsOpen(false)}
                             className="block px-4 py-3 text-gray-800 hover:bg-gray-50 hover:text-primary-800 rounded-lg font-medium"
                         >
