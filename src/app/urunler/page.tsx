@@ -12,7 +12,7 @@ const categories = [
     { name: "Karton Bardak Çeşitleri", href: "/urunler/karton-bardak" },
     { name: "Viza Rulosu" },
     { name: "Kilogramlık Poşet Çeşitleri", href: "/urunler/kilogramlik-poset" },
-    { name: "Adetli Poşet" },
+    { name: "Adetli Poşet", href: "/urunler/adetli-poset" },
     { name: "Pastancılık Çeşitleri" },
     { name: "Plastik Tabak Çeşitleri" },
     { name: "Çatal-Kaşık Çeşitleri" }
