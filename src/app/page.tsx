@@ -4,6 +4,12 @@ import TrustSection from "@/components/home/TrustSection";
 import FeaturedProducts from "@/components/home/FeaturedProducts";
 import GoogleMapSection from "@/components/home/GoogleMapSection";
 import Footer from "@/components/layout/Footer";
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: "Arya Ambalaj | Ankara Toptan Ambalaj Tedarikçisi",
+  description: "Ankara ve çevresine özel en uygun fiyat garantisiyle poşet, karton, plastik ambalaj ve temizlik malzemeleri toptan satışı. Hemen fiyat alın.",
+};
 
 export default function Home() {
   return (

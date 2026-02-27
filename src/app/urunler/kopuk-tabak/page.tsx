@@ -5,6 +5,12 @@ import Footer from "@/components/layout/Footer";
 import { ArrowLeft, MessageCircle } from "lucide-react";
 import Link from "next/link";
 import { motion } from "framer-motion";
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+    title: "Köpük Tabak Çeşitleri: Erze ve Köpüksan Toptan | Arya Ambalaj",
+    description: "Erze ve Köpüksan marka 3 gözlü, 5 gözlü ve tek kare ısı yalıtımlı sızdırmaz köpük (strafor) tabaklar. Catering ve paket servis için toptan köpük ambalaj.",
+};
 
 export default function KopukTabakPage() {
     const products = [

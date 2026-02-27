@@ -21,9 +21,25 @@ const montserrat = Montserrat({
 });
 
 export const metadata: Metadata = {
-  title: "Arya Ambalaj | Ankara Toptan Ambalaj",
-  description: "Ankara Altındağ'da 15 yıllık tecrübeyle toptan poşet, ambalaj, karton ve plastik ürün tedariği sağlayan güvenilir çözüm ortağınız.",
-  keywords: ["poşet", "ankara ambalaj", "ambalaj malzemesi", "toptan ambalaj", "karton bardak", "temizlik malzemeleri"],
+  title: "Arya Ambalaj | Ankara Toptan Ambalaj ve Poşet",
+  description: "Ankara Altındağ Hüseyingazi ve Karapürçek bölgesinin lider ambalaj toptancısı. 15 yıllık tecrübemizle toptan poşet, karton bardak, köpük tabak ve temizlik malzemeleri.",
+  keywords: [
+    "poşet", "ankara ambalaj", "ambalaj malzemesi", "toptan ambalaj",
+    "karton bardak", "temizlik malzemeleri", "köpük tabak", "aybal poşet",
+    "naksan poşet", "toptan karton bardak", "ankara poşet", "hüseyingazi ambalaj"
+  ],
+  openGraph: {
+    title: "Arya Ambalaj | Toptan ve Perakende Ambalaj Çözümleri",
+    description: "Ankara'nın lider toptan ambalaj tedarikçisi. Poşet, karton bardak, köpük tabak ve ambalaj malzemelerinde en uygun fiyatlar.",
+    url: "https://aryaambalaj.com",
+    siteName: "Arya Ambalaj",
+    locale: "tr_TR",
+    type: "website",
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 export default function RootLayout({
