@@ -4,7 +4,6 @@ import TrustSection from "@/components/home/TrustSection";
 import FeaturedProducts from "@/components/home/FeaturedProducts";
 import GoogleMapSection from "@/components/home/GoogleMapSection";
 import Footer from "@/components/layout/Footer";
-import WhatsAppFAB from "@/components/layout/WhatsAppFAB";
 
 export default function Home() {
   return (
@@ -26,9 +25,6 @@ export default function Home() {
       </main>
 
       <Footer />
-
-      {/* Sabit WhatsApp İkonu */}
-      <WhatsAppFAB />
     </div>
   );
 }

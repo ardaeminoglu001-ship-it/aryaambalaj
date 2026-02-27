@@ -1,6 +1,5 @@
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
-import WhatsAppFAB from "@/components/layout/WhatsAppFAB";
 import Link from "next/link";
 
 export const metadata = {
@@ -62,7 +61,6 @@ export default function ProductsPage() {
             </main>
 
             <Footer />
-            <WhatsAppFAB />
         </div>
     );
 }

@@ -1,6 +1,5 @@
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
-import WhatsAppFAB from "@/components/layout/WhatsAppFAB";
 
 export const metadata = {
     title: "Hakkımızda | Arya Ambalaj",
@@ -26,7 +25,6 @@ export default function AboutPage() {
             </main>
 
             <Footer />
-            <WhatsAppFAB />
         </div>
     );
 }
