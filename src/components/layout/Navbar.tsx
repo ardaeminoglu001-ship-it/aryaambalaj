@@ -57,7 +57,7 @@ export default function Navbar() {
                             Ana Sayfa
                         </Link>
                         <Link
-                            href="/#kategoriler"
+                            href="/urunler"
                             className="text-gray-300 hover:text-white font-medium transition-colors"
                         >
                             Katalog & Ürünler
@@ -108,7 +108,7 @@ export default function Navbar() {
                             Ana Sayfa
                         </Link>
                         <Link
-                            href="/#kategoriler"
+                            href="/urunler"
                             onClick={() => setIsOpen(false)}
                             className="block px-4 py-3 text-gray-300 hover:bg-black hover:text-white rounded-lg font-medium"
                         >
