@@ -11,15 +11,10 @@ export default function Footer() {
 
                     {/* Company Info */}
                     <div className="space-y-6">
-                        <Link href="/" className="flex items-center gap-2 inline-block">
-                            <div className="bg-primary-800 text-white w-10 h-10 rounded-lg flex items-center justify-center font-serif font-bold text-xl">
-                                A
-                            </div>
-                            <div className="flex flex-col">
-                                <span className="font-serif font-bold text-xl text-white leading-none">
-                                    Arya Ambalaj
-                                </span>
-                            </div>
+                        <Link href="/" className="flex flex-col inline-block">
+                            <span className="font-serif font-bold text-xl text-white leading-none">
+                                Arya Ambalaj
+                            </span>
                         </Link>
                         <p className="text-zinc-400 text-sm leading-relaxed">
                             Ankara Altındağ'da 15 yıllık tecrübemizle, toptan poşet, karton ve plastik temizlik ürünleri alanında işletmelerin güvenilir tedarikçisiyiz. Kalite ve uygun fiyat odaklı hizmet anlayışımızla yanınızdayız.
@@ -143,7 +138,7 @@ export default function Footer() {
                         </div>
                     </div>
                 </div>
-            </div>
-        </footer>
+            </div >
+        </footer >
     );
 }

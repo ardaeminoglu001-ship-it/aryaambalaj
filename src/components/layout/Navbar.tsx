@@ -33,11 +33,8 @@ export default function Navbar() {
             {/* Main Navbar */}
             <div className="px-4 md:px-6 lg:px-12">
                 <div className="flex justify-between items-center h-20">
-                    {/* Logo */}
-                    <Link href="/" className="flex items-center gap-2">
-                        <div className="bg-primary-800 text-white w-10 h-10 rounded-lg flex items-center justify-center font-serif font-bold text-xl shadow-md">
-                            A
-                        </div>
+                    {/* Logo Text Only */}
+                    <Link href="/" className="flex items-center">
                         <div className="flex flex-col">
                             <span className="font-serif font-bold text-xl text-white leading-none">
                                 Arya Ambalaj
