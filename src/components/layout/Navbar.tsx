@@ -19,13 +19,13 @@ export default function Navbar() {
                 </div>
                 <div className="flex items-center gap-4">
                     <a
-                        href="https://wa.me/905424422857"
+                        href="https://wa.me/905424434495"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="flex items-center gap-1 hover:text-white transition-colors font-medium"
                     >
                         <Phone className="w-3 h-3 text-primary-600" />
-                        0542 442 2857
+                        0542 443 44 95
                     </a>
                 </div>
             </div>
@@ -73,7 +73,7 @@ export default function Navbar() {
                     {/* Desktop Right Side (Call to Action) */}
                     <div className="hidden md:flex items-center gap-4">
                         <a
-                            href="https://wa.me/905424422857?text=Merhaba, fiyat bilgisi almak istiyorum."
+                            href="https://wa.me/905424434495?text=Merhaba, fiyat bilgisi almak istiyorum."
                             target="_blank"
                             rel="noopener noreferrer"
                             className="flex items-center gap-2 px-6 py-2.5 rounded-full bg-primary-800 text-white font-medium text-sm shadow-md shadow-primary-800/20 hover:bg-primary-900 transition-all duration-300 hover:shadow-lg hover:-translate-y-0.5"
@@ -121,12 +121,12 @@ export default function Navbar() {
                         <div className="h-px bg-zinc-900 my-2" />
 
                         <a
-                            href="https://wa.me/905424422857"
+                            href="https://wa.me/905424434495"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="flex items-center justify-center gap-2 w-full px-4 py-3 rounded-lg bg-primary-800 text-white font-medium text-sm shadow-md"
                         >
-                            0542 442 2857 Numarasını Ara
+                            0542 443 44 95 Numarasını Ara
                         </a>
                     </div>
                 </div>

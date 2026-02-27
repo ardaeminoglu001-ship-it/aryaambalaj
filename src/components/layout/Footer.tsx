@@ -52,7 +52,7 @@ export default function Footer() {
                             </li>
                             <li>
                                 <a
-                                    href="https://wa.me/905424422857?text=Merhaba, fiyat bilgisi almak istiyorum."
+                                    href="https://wa.me/905424434495?text=Merhaba, fiyat bilgisi almak istiyorum."
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     className="text-zinc-400 hover:text-white transition-colors flex items-center gap-2 text-sm group"
@@ -108,8 +108,8 @@ export default function Footer() {
                             </li>
                             <li className="flex items-center gap-3">
                                 <Phone className="w-5 h-5 text-primary-600 shrink-0" />
-                                <a href="https://wa.me/905424422857" className="text-zinc-400 hover:text-white transition-colors text-sm font-medium">
-                                    0542 442 2857
+                                <a href="https://wa.me/905424434495" className="text-zinc-400 hover:text-white transition-colors text-sm font-medium">
+                                    0542 443 44 95
                                 </a>
                             </li>
                             <li className="flex items-center gap-3">

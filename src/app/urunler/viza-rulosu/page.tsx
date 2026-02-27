@@ -15,7 +15,7 @@ export default function VizaRulosuPage() {
 
     const handleWhatsAppClick = (productName: string) => {
         const text = `Merhaba, Arya Ambalaj internet sitesinden geliyorum. ${productName} hakkında fiyat ve detaylı bilgi alabilir miyim?`;
-        const url = `https://wa.me/905424422857?text=${encodeURIComponent(text)}`;
+        const url = `https://wa.me/905424434495?text=${encodeURIComponent(text)}`;
         window.open(url, '_blank', 'noopener,noreferrer');
     };
 

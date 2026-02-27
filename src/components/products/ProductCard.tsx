@@ -15,9 +15,9 @@ interface ProductCardProps {
 
 export default function ProductCard({ product }: ProductCardProps) {
     // Oluşturulacak WhatsApp Linki
-    // https://wa.me/905424422857?text=Merhaba, Arya Ambalaj sitesinden yazıyorum. '[Ürün Adı]' ürünü için toptan fiyat almak istiyorum.
+    // https://wa.me/905424434495?text=Merhaba, Arya Ambalaj sitesinden yazıyorum. '[Ürün Adı]' ürünü için toptan fiyat almak istiyorum.
     const waMessage = `Merhaba, Arya Ambalaj sitesinden yazıyorum. '${product.title}' ürünü için toptan fiyat almak istiyorum.`;
-    const waLink = `https://wa.me/905424422857?text=${encodeURIComponent(waMessage)}`;
+    const waLink = `https://wa.me/905424434495?text=${encodeURIComponent(waMessage)}`;
 
     return (
         <div className="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-xl hover:shadow-primary-900/5 hover:-translate-y-1 transition-all duration-300 group flex flex-col h-full">
