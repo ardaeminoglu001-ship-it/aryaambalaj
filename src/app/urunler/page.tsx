@@ -10,7 +10,7 @@ export const metadata = {
 
 const categories = [
     { name: "Köpük Tabak Çeşitleri" },
-    { name: "Karton Bardak Çeşitleri" },
+    { name: "Karton Bardak Çeşitleri", href: "/urunler/karton-bardak" },
     { name: "Viza Rulosu" },
     { name: "Kilogramlık Poşet Çeşitleri", href: "/urunler/kilogramlik-poset" },
     { name: "Adetli Poşet" },
