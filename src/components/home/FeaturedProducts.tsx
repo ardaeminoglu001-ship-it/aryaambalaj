@@ -16,7 +16,7 @@ export default function FeaturedProducts() {
             id: "2",
             title: "Karton Bardak Çeşitleri",
             description: "Sıcak ve soğuk içecekler için sızdırmaz, çok çeşitli standart ebat ve hacimlerde",
-            image_url: "https://images.unsplash.com/photo-1505252585461-04db1eb84625?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+            image_url: "",
         },
         {
             id: "3",
