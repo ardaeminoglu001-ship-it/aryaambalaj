@@ -10,7 +10,7 @@ export default function FeaturedProducts() {
             id: "1",
             title: "Kilogramlık Poşet Çeşitleri",
             description: "Dayanıklı ve yüksek taşıma kapasiteli, her gramaja uygun poşet seçenekleri",
-            image_url: "https://images.unsplash.com/photo-1620055746359-994df7bc617f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+            image_url: "/images/poset.webp",
         },
         {
             id: "2",
