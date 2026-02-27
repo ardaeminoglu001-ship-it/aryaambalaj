@@ -14,7 +14,7 @@ const categories = [
     { name: "Kilogramlık Poşet Çeşitleri", href: "/urunler/kilogramlik-poset" },
     { name: "Adetli Poşet", href: "/urunler/adetli-poset" },
     { name: "Pastancılık Çeşitleri", href: "/urunler/pastancilik-cesitleri" },
-    { name: "Plastik Tabak Çeşitleri" },
+    { name: "Plastik Tabak Çeşitleri", href: "/urunler/plastik-tabak" },
     { name: "Çatal-Kaşık Çeşitleri" }
 ];
 
