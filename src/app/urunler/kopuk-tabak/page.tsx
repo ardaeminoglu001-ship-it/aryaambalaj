@@ -10,45 +10,40 @@ import { motion } from "framer-motion";
 export default function KopukTabakPage() {
     const products = [
         {
-            category: "Çok Gözlü Tabaklar",
+            category: "Erze Marka Köpük Tabaklar",
             items: [
                 "Erze 3 Gözlü Köpük Tabak",
-                "Köpüksan 3 Gözlü Köpük Tabak",
                 "Erze 5 Gözlü Köpük Tabak",
-                "Köpüksan 5 Gözlü Köpük Tabak",
-                "Erze Kapaklı 3 Gözlü A23 Köpük Tabak"
-            ]
-        },
-        {
-            category: "Tek Kare Modeller",
-            items: [
                 "Erze Tek Kare Mod 16 Köpük Tabak",
                 "Erze Tek Kare Mod 2 Köpük Tabak",
                 "Erze Tek Kare Mod 1 Köpük Tabak",
-                "Köpüksan Tek Kare Mod 16 Köpük Tabak",
-                "Köpüksan Tek Kare Mod 1 Köpük Tabak",
-                "Köpüksan Tek Kare Mod 2 Köpük Tabak",
-                "Köpüksan Tek Kare C110 Köpük Tabak"
-            ]
-        },
-        {
-            category: "Yuvarlak & Tek Gözlü",
-            items: [
                 "Erze Yuvarlak A33 Köpük Tabak",
                 "Erze Yuvarlak B33 Köpük Tabak",
                 "Erze Yuvarlak C33 Köpük Tabak",
                 "Erze Kapaklı Tek Gözlü C23 Köpük Tabak",
+                "Erze Kapaklı 3 Gözlü A23 Köpük Tabak",
                 "Erze Tek Gözlü Kapaklı Küçük D23"
             ]
         },
         {
-            category: "Özel & Renkli Modeller",
+            category: "Köpüksan Marka Köpük Tabaklar",
             items: [
+                "Köpüksan 3 Gözlü Köpük Tabak",
+                "Köpüksan 5 Gözlü Köpük Tabak",
+                "Köpüksan Tek Kare Mod 16 Köpük Tabak",
+                "Köpüksan Tek Kare Mod 1 Köpük Tabak",
+                "Köpüksan Tek Kare Mod 2 Köpük Tabak",
+                "Köpüksan Tek Kare C110 Köpük Tabak",
                 "Köpüksan Tepsi K8 Köpük Tabak",
-                "Köpüksan Hamburger Köpük Tabağı",
-                "Strafor Köpük Kasa",
+                "Köpüksan Hamburger Köpük Tabağı"
+            ]
+        },
+        {
+            category: "Diğer Köpük Tabaklar & Kaplar",
+            items: [
                 "Mod 16 Turuncu Köpük Tabak",
-                "Mod 1 Turuncu Köpük Tabak"
+                "Mod 1 Turuncu Köpük Tabak",
+                "Strafor Köpük Kasa"
             ]
         }
     ];
