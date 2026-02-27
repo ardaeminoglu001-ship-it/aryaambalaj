@@ -121,7 +121,7 @@ export default function Footer() {
                             <li className="flex items-center gap-3">
                                 <Clock className="w-5 h-5 text-primary-600 shrink-0" />
                                 <span className="text-zinc-400 text-sm">
-                                    Pzt-Cmt: 08:30 - 18:30
+                                    Pzt-Paz: 08:00 - 20:00
                                 </span>
                             </li>
                         </ul>
