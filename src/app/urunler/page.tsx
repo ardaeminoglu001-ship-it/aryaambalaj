@@ -1,6 +1,7 @@
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import WhatsAppFAB from "@/components/layout/WhatsAppFAB";
+import Link from "next/link";
 
 export const metadata = {
     title: "Ürün Grupları | Arya Ambalaj",
@@ -8,14 +9,14 @@ export const metadata = {
 };
 
 const categories = [
-    "Köpük Tabak Çeşitleri",
-    "Karton Bardak Çeşitleri",
-    "Viza Rulosu",
-    "Kilogramlık Poşet Çeşitleri",
-    "Adetli Poşet",
-    "Pastancılık Çeşitleri",
-    "Plastik Tabak Çeşitleri",
-    "Çatal-Kaşık Çeşitleri"
+    { name: "Köpük Tabak Çeşitleri" },
+    { name: "Karton Bardak Çeşitleri" },
+    { name: "Viza Rulosu" },
+    { name: "Kilogramlık Poşet Çeşitleri", href: "/urunler/kilogramlik-poset" },
+    { name: "Adetli Poşet" },
+    { name: "Pastancılık Çeşitleri" },
+    { name: "Plastik Tabak Çeşitleri" },
+    { name: "Çatal-Kaşık Çeşitleri" }
 ];
 
 export default function ProductsPage() {
@@ -37,16 +38,25 @@ export default function ProductsPage() {
 
                     {/* Category Grid */}
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 md:gap-8">
-                        {categories.map((category, index) => (
-                            <div
-                                key={index}
-                                className="bg-white rounded-lg shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 p-8 flex items-center justify-center text-center cursor-pointer border border-gray-100 group"
-                            >
-                                <h3 className="text-xl font-bold text-gray-800 group-hover:text-primary-800 transition-colors">
-                                    {category}
-                                </h3>
-                            </div>
-                        ))}
+                        {categories.map((category, index) => {
+                            const CardContent = (
+                                <div className="bg-white rounded-lg shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 p-8 flex items-center justify-center text-center cursor-pointer border border-gray-100 group h-full">
+                                    <h3 className="text-xl font-bold text-gray-800 group-hover:text-primary-800 transition-colors">
+                                        {category.name}
+                                    </h3>
+                                </div>
+                            );
+
+                            return category.href ? (
+                                <Link href={category.href} key={index} className="block h-full block">
+                                    {CardContent}
+                                </Link>
+                            ) : (
+                                <div key={index} className="h-full">
+                                    {CardContent}
+                                </div>
+                            );
+                        })}
                     </div>
                 </div>
             </main>
