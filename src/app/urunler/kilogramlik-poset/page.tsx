@@ -5,12 +5,6 @@ import Footer from "@/components/layout/Footer";
 import { ArrowLeft, MessageCircle } from "lucide-react";
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { Metadata } from 'next';
-
-export const metadata: Metadata = {
-    title: "Kilogramlık Poşet Çeşitleri: Aybal, Nehir, Naksan Toptan | Arya Ambalaj",
-    description: "Aybal, Nehir ve Naksan markalarının en çok tercih edilen dayanıklı atlet poşet seçenekleri. Büyük boy ve battal boy toptan poşet fiyatları.",
-};
 
 export default function KilogramlikPosetPage() {
     const products = [
