@@ -72,10 +72,6 @@ export default function Navbar() {
 
                     {/* Desktop Right Side (Call to Action) */}
                     <div className="hidden md:flex items-center gap-4">
-                        <button className="flex items-center gap-2 px-5 py-2.5 rounded-full border border-zinc-800 text-white hover:bg-zinc-900 font-medium text-sm transition-all duration-300">
-                            <Download className="w-4 h-4" />
-                            Kataloğu PDF İndir
-                        </button>
                         <a
                             href="https://wa.me/905424422857?text=Merhaba, fiyat bilgisi almak istiyorum."
                             target="_blank"
@@ -124,10 +120,6 @@ export default function Navbar() {
 
                         <div className="h-px bg-zinc-900 my-2" />
 
-                        <button className="flex items-center justify-center gap-2 w-full px-4 py-3 rounded-lg border border-zinc-800 text-white hover:bg-black font-medium text-sm">
-                            <Download className="w-4 h-4" />
-                            Kataloğu PDF İndir
-                        </button>
                         <a
                             href="https://wa.me/905424422857"
                             target="_blank"
