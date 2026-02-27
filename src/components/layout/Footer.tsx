@@ -39,22 +39,27 @@ export default function Footer() {
                                 </Link>
                             </li>
                             <li>
-                                <Link href="/#kategoriler" className="text-zinc-400 hover:text-white transition-colors flex items-center gap-2 text-sm group">
+                                <Link href="/urunler" className="text-zinc-400 hover:text-white transition-colors flex items-center gap-2 text-sm group">
                                     <ChevronRight className="w-3 h-3 text-primary-600 group-hover:translate-x-1 transition-transform" />
                                     Ürün Kataloğu
                                 </Link>
                             </li>
                             <li>
-                                <Link href="/#hakkimizda" className="text-zinc-400 hover:text-white transition-colors flex items-center gap-2 text-sm group">
+                                <Link href="/hakkimizda" className="text-zinc-400 hover:text-white transition-colors flex items-center gap-2 text-sm group">
                                     <ChevronRight className="w-3 h-3 text-primary-600 group-hover:translate-x-1 transition-transform" />
                                     Hakkımızda
                                 </Link>
                             </li>
                             <li>
-                                <button className="text-zinc-400 hover:text-white transition-colors flex items-center gap-2 text-sm group">
+                                <a
+                                    href="https://wa.me/905424422857?text=Merhaba, fiyat bilgisi almak istiyorum."
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="text-zinc-400 hover:text-white transition-colors flex items-center gap-2 text-sm group"
+                                >
                                     <ChevronRight className="w-3 h-3 text-primary-600 group-hover:translate-x-1 transition-transform" />
-                                    E-Katalog İndir (PDF)
-                                </button>
+                                    İletişime Geçin
+                                </a>
                             </li>
                         </ul>
                     </div>
@@ -65,17 +70,25 @@ export default function Footer() {
                             <span className="w-8 h-px bg-primary-800"></span> Ürün Gruplarımız
                         </h4>
                         <ul className="space-y-3">
-                            <li className="text-zinc-400 hover:text-white transition-colors flex items-center gap-2 text-sm group cursor-pointer">
-                                <ChevronRight className="w-3 h-3 text-primary-600 group-hover:translate-x-1 transition-transform" /> Baskılı / Baskısız Poşet
+                            <li>
+                                <Link href="/urunler/kilogramlik-poset" className="text-zinc-400 hover:text-white transition-colors flex items-center gap-2 text-sm group cursor-pointer">
+                                    <ChevronRight className="w-3 h-3 text-primary-600 group-hover:translate-x-1 transition-transform" /> Poşet Çeşitleri
+                                </Link>
                             </li>
-                            <li className="text-zinc-400 hover:text-white transition-colors flex items-center gap-2 text-sm group cursor-pointer">
-                                <ChevronRight className="w-3 h-3 text-primary-600 group-hover:translate-x-1 transition-transform" /> Karton & Plastik Bardak
+                            <li>
+                                <Link href="/urunler/karton-bardak" className="text-zinc-400 hover:text-white transition-colors flex items-center gap-2 text-sm group cursor-pointer">
+                                    <ChevronRight className="w-3 h-3 text-primary-600 group-hover:translate-x-1 transition-transform" /> Karton Bardak Çeşitleri
+                                </Link>
                             </li>
-                            <li className="text-zinc-400 hover:text-white transition-colors flex items-center gap-2 text-sm group cursor-pointer">
-                                <ChevronRight className="w-3 h-3 text-primary-600 group-hover:translate-x-1 transition-transform" /> Temizlik Malzemeleri
+                            <li>
+                                <Link href="/urunler/pastancilik-cesitleri" className="text-zinc-400 hover:text-white transition-colors flex items-center gap-2 text-sm group cursor-pointer">
+                                    <ChevronRight className="w-3 h-3 text-primary-600 group-hover:translate-x-1 transition-transform" /> Pastancılık Çeşitleri
+                                </Link>
                             </li>
-                            <li className="text-zinc-400 hover:text-white transition-colors flex items-center gap-2 text-sm group cursor-pointer">
-                                <ChevronRight className="w-3 h-3 text-primary-600 group-hover:translate-x-1 transition-transform" /> Köpük & Plastik Tabaklar
+                            <li>
+                                <Link href="/urunler/kopuk-tabak" className="text-zinc-400 hover:text-white transition-colors flex items-center gap-2 text-sm group cursor-pointer">
+                                    <ChevronRight className="w-3 h-3 text-primary-600 group-hover:translate-x-1 transition-transform" /> Köpük Tabak Çeşitleri
+                                </Link>
                             </li>
                         </ul>
                     </div>
