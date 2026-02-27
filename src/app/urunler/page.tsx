@@ -13,7 +13,7 @@ const categories = [
     { name: "Viza Rulosu", href: "/urunler/viza-rulosu" },
     { name: "Kilogramlık Poşet Çeşitleri", href: "/urunler/kilogramlik-poset" },
     { name: "Adetli Poşet", href: "/urunler/adetli-poset" },
-    { name: "Pastancılık Çeşitleri" },
+    { name: "Pastancılık Çeşitleri", href: "/urunler/pastancilik-cesitleri" },
     { name: "Plastik Tabak Çeşitleri" },
     { name: "Çatal-Kaşık Çeşitleri" }
 ];
