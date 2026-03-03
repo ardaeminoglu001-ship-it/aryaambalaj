@@ -63,10 +63,16 @@ export default function KartonBardakPage() {
                             <ul className="space-y-4">
                                 {sizes.map((size, index) => (
                                     <li key={index} className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 p-4 rounded-xl hover:bg-zinc-50 transition-colors border border-transparent hover:border-zinc-100 group">
-                                        <div className="flex items-center gap-4">
-                                            <div className="w-14 h-14 bg-primary-100 text-primary-800 rounded-full flex items-center justify-center font-bold font-serif group-hover:scale-110 transition-transform shadow-sm">
+                                        <div className="flex items-center gap-4 flex-1">
+                                            {/* Yeni Boş Resim Placeholder'ı */}
+                                            <div className="w-12 h-12 rounded-full bg-gray-200 shrink-0 shadow-inner flex items-center justify-center">
+                                            </div>
+
+                                            {/* Mevcut oz Göstergesi */}
+                                            <div className="w-14 h-14 bg-primary-100 text-primary-800 rounded-full flex items-center justify-center font-bold font-serif group-hover:scale-110 transition-transform shadow-sm shrink-0">
                                                 {size.replace('oz', '')}
                                             </div>
+
                                             <div>
                                                 <span className="font-semibold text-gray-800 text-lg block">
                                                     {size} Karton Bardak
@@ -78,7 +84,7 @@ export default function KartonBardakPage() {
                                         </div>
                                         <button
                                             onClick={() => handleWhatsAppClick(size)}
-                                            className="inline-flex items-center justify-center gap-2 px-6 py-2.5 bg-green-50 text-green-700 hover:bg-green-100 hover:text-green-800 rounded-lg text-sm font-semibold transition-colors shadow-sm w-full sm:w-auto mt-2 sm:mt-0"
+                                            className="inline-flex items-center justify-center gap-2 px-6 py-2.5 bg-green-50 text-green-700 hover:bg-green-100 hover:text-green-800 rounded-lg text-sm font-semibold transition-colors shadow-sm w-full sm:w-auto mt-2 sm:mt-0 shrink-0"
                                         >
                                             <MessageCircle className="w-5 h-5" />
                                             Fiyat Sor
