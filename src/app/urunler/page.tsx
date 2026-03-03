@@ -24,7 +24,8 @@ const categories = [
     { name: "Kağıt Çeşitleri", href: "/urunler/kagit-cesitleri" },
     { name: "Kurbanlık Poşet Çeşitleri", href: "/urunler/kurbanlik-poset" },
     { name: "Strafor Köpük Kasalar", href: "/urunler/kopuk-kasa" },
-    { name: "Servis ve Sunum Ürünleri", href: "/urunler/servis-ve-sunum" }
+    { name: "Servis ve Sunum Ürünleri", href: "/urunler/servis-ve-sunum" },
+    { name: "Karton Tabak Çeşitleri", href: "/urunler/karton-tabak" }
 ];
 
 export default function ProductsPage() {
