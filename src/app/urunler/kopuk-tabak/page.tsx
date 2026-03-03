@@ -107,9 +107,13 @@ export default function KopukTabakPage() {
                                     <ul className="space-y-3 flex-grow">
                                         {group.items.map((item, itemIndex) => (
                                             <li key={itemIndex} className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 p-3 rounded-lg hover:bg-zinc-50 transition-colors border border-transparent hover:border-zinc-100 group">
-                                                <span className="font-medium text-gray-800 text-sm sm:text-base">
-                                                    {item}
-                                                </span>
+                                                <div className="flex flex-row items-center gap-4 flex-1">
+                                                    <div className="w-12 h-12 rounded-full bg-gray-200 shrink-0 shadow-inner flex items-center justify-center">
+                                                    </div>
+                                                    <span className="font-medium text-gray-800 text-sm sm:text-base leading-snug">
+                                                        {item}
+                                                    </span>
+                                                </div>
                                                 <button
                                                     onClick={() => handleWhatsAppClick(item)}
                                                     className="inline-flex items-center justify-center gap-2 px-4 py-2 bg-green-50 text-green-700 hover:bg-green-100 hover:text-green-800 rounded-md text-sm font-semibold transition-colors w-full sm:w-auto shrink-0"
