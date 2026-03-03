@@ -67,18 +67,22 @@ export default function PlastikTabakPage() {
                         <div className="p-6 md:p-8">
                             <ul className="space-y-4">
                                 {products.map((item, index) => (
-                                    <li key={index} className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 p-5 rounded-xl hover:bg-zinc-50 transition-colors border border-gray-100 hover:border-primary-100 shadow-sm sm:shadow-none bg-white">
-                                        <div className="flex items-center gap-4">
-                                            <div className="w-16 h-16 bg-zinc-100 text-primary-800 rounded-full flex items-center justify-center font-bold text-lg border border-zinc-200 shadow-inner">
-                                                {item.split(' ')[0]}
+                                    <li key={index} className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 p-5 rounded-xl hover:bg-zinc-50 transition-colors border border-gray-100 hover:border-primary-100 shadow-sm sm:shadow-none bg-white group">
+                                        <div className="flex items-center gap-4 flex-1">
+                                            {/* Resim Eklenebilir Rozet (Placeholder + Boyut) */}
+                                            <div className="w-16 h-16 bg-zinc-100 text-primary-800 rounded-full flex items-center justify-center font-bold text-lg border border-zinc-200 shadow-inner group-hover:bg-primary-50 transition-colors overflow-hidden relative shrink-0">
+                                                <span className="relative z-10">
+                                                    {item.split(' ')[0]}
+                                                </span>
                                             </div>
+
                                             <span className="font-semibold text-gray-800 text-lg">
                                                 {item}
                                             </span>
                                         </div>
                                         <button
                                             onClick={() => handleWhatsAppClick(item)}
-                                            className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-green-50 text-green-700 hover:bg-green-100 hover:text-green-800 rounded-lg text-sm font-semibold transition-colors w-full sm:w-auto mt-2 sm:mt-0"
+                                            className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-green-50 text-green-700 hover:bg-green-100 hover:text-green-800 rounded-lg text-sm font-semibold transition-colors w-full sm:w-auto mt-2 sm:mt-0 shrink-0"
                                         >
                                             <MessageCircle className="w-5 h-5" />
                                             Fiyat Sor
