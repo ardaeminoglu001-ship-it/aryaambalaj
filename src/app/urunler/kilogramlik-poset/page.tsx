@@ -69,13 +69,19 @@ export default function KilogramlikPosetPage() {
                                 <div className="p-6 flex-grow flex flex-col">
                                     <ul className="space-y-4 flex-grow mb-8">
                                         {brandGroup.types.map((type, typeIndex) => (
-                                            <li key={typeIndex} className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 p-3 rounded-lg hover:bg-zinc-50 transition-colors border border-transparent hover:border-zinc-100">
-                                                <span className="font-semibold text-gray-800">
-                                                    {brandGroup.brand} {type}
-                                                </span>
+                                            <li key={typeIndex} className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 p-3 rounded-xl hover:bg-zinc-50 transition-colors border border-transparent hover:border-zinc-100 group">
+                                                <div className="flex flex-row items-center gap-4 flex-1">
+                                                    {/* Resim Eklenebilir Rozet (Placeholder) */}
+                                                    <div className="w-12 h-12 rounded-full bg-gray-100 shrink-0 shadow-inner flex items-center justify-center overflow-hidden relative group-hover:bg-primary-50 transition-all">
+                                                    </div>
+
+                                                    <span className="font-semibold text-gray-800 leading-snug">
+                                                        {brandGroup.brand} {type}
+                                                    </span>
+                                                </div>
                                                 <button
                                                     onClick={() => handleWhatsAppClick(`${brandGroup.brand} ${type}`)}
-                                                    className="inline-flex items-center gap-2 px-4 py-2 bg-green-50 text-green-700 hover:bg-green-100 hover:text-green-800 rounded-md text-sm font-medium transition-colors"
+                                                    className="inline-flex items-center justify-center gap-2 px-4 py-2 bg-green-50 text-green-700 hover:bg-green-100 hover:text-green-800 rounded-lg text-sm font-semibold transition-colors shrink-0 w-full sm:w-auto"
                                                 >
                                                     <MessageCircle className="w-4 h-4" />
                                                     Fiyat Sor
