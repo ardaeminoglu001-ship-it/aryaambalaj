@@ -23,6 +23,7 @@ export default function PastancilikCesitleriPage() {
             title: "Kutular",
             items: [
                 "Mini Pasta Kutusu",
+                "0 No Pasta Kutusu",
                 "1 No Pasta Kutusu",
                 "2 No Pasta Kutusu",
                 "500gr Baklava Kutusu",
