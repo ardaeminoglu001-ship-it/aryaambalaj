@@ -21,7 +21,8 @@ const categories = [
     { name: "Buzdolabı & Kilitli Poşet", href: "/urunler/buzdolabi-kilitli-poset" },
     { name: "Streç Film Çeşitleri", href: "/urunler/strec-film" },
     { name: "Rulo Poşet Çeşitleri", href: "/urunler/rulo-poset" },
-    { name: "Kağıt Çeşitleri", href: "/urunler/kagit-cesitleri" }
+    { name: "Kağıt Çeşitleri", href: "/urunler/kagit-cesitleri" },
+    { name: "Kurbanlık Poşet Çeşitleri", href: "/urunler/kurbanlik-poset" }
 ];
 
 export default function ProductsPage() {
