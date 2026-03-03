@@ -64,19 +64,19 @@ export default function KartonBardakPage() {
                                 {sizes.map((size, index) => (
                                     <li key={index} className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 p-4 rounded-xl hover:bg-zinc-50 transition-colors border border-transparent hover:border-zinc-100 group">
                                         <div className="flex items-center gap-4 flex-1">
-                                            {/* Yeni Boş Resim Placeholder'ı */}
-                                            <div className="w-12 h-12 rounded-full bg-gray-200 shrink-0 shadow-inner flex items-center justify-center">
-                                            </div>
-
-                                            {/* Mevcut oz Göstergesi */}
-                                            <div className="w-14 h-14 bg-primary-100 text-primary-800 rounded-full flex items-center justify-center font-bold font-serif group-hover:scale-110 transition-transform shadow-sm shrink-0">
-                                                {size.replace('oz', '')}
-                                            </div>
-
-                                            <div>
-                                                <span className="font-semibold text-gray-800 text-lg block">
-                                                    {size} Karton Bardak
+                                            {/* Resim Eklenebilir Rozet (Placeholder + Boyut) */}
+                                            <div className="w-16 h-16 bg-gray-100 text-gray-500 rounded-full flex flex-col items-center justify-center group-hover:bg-primary-50 group-hover:text-primary-700 transition-colors shadow-inner overflow-hidden relative shrink-0">
+                                                <span className="font-bold font-serif text-xl relative z-10">
+                                                    {size.replace('oz', '')}
                                                 </span>
+                                                <span className="text-[10px] uppercase tracking-wider font-semibold relative z-10">
+                                                    OZ
+                                                </span>
+                                            </div>
+
+                                            <div>    <span className="font-semibold text-gray-800 text-lg block">
+                                                {size} Karton Bardak
+                                            </span>
                                                 <span className="text-sm text-gray-500">
                                                     Sıcak ve soğuk içecekler için ideal
                                                 </span>
