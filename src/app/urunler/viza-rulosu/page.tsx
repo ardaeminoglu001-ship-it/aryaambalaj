@@ -67,17 +67,21 @@ export default function VizaRulosuPage() {
                             <ul className="space-y-4">
                                 {products.map((item, index) => (
                                     <li key={index} className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 p-5 rounded-xl hover:bg-zinc-50 transition-colors border border-gray-100 hover:border-primary-100 shadow-sm sm:shadow-none group">
-                                        <div className="flex items-center gap-4">
-                                            <div className="w-12 h-12 bg-white border border-gray-200 text-gray-600 rounded-full flex items-center justify-center font-bold font-serif group-hover:scale-110 group-hover:border-primary-200 group-hover:text-primary-800 transition-all shadow-sm">
-                                                {index + 1}
+                                        <div className="flex items-center gap-4 flex-1">
+                                            {/* Resim Eklenebilir Rozet (Placeholder + Numara) */}
+                                            <div className="w-16 h-16 bg-gray-100 text-gray-500 rounded-full flex items-center justify-center group-hover:bg-primary-50 group-hover:text-primary-700 transition-colors shadow-inner overflow-hidden relative shrink-0">
+                                                <span className="font-bold font-serif text-2xl relative z-10">
+                                                    {index + 1}
+                                                </span>
                                             </div>
+
                                             <span className="font-semibold text-gray-800 text-lg">
                                                 {item}
                                             </span>
                                         </div>
                                         <button
                                             onClick={() => handleWhatsAppClick(item)}
-                                            className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-green-50 text-green-700 hover:bg-green-100 hover:text-green-800 rounded-lg text-sm font-semibold transition-colors w-full sm:w-auto mt-2 sm:mt-0"
+                                            className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-green-50 text-green-700 hover:bg-green-100 hover:text-green-800 rounded-lg text-sm font-semibold transition-colors w-full sm:w-auto mt-2 sm:mt-0 shrink-0"
                                         >
                                             <MessageCircle className="w-5 h-5" />
                                             Fiyat Sor
