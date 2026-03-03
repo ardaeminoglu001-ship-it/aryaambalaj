@@ -22,7 +22,8 @@ const categories = [
     { name: "Streç Film Çeşitleri", href: "/urunler/strec-film" },
     { name: "Rulo Poşet Çeşitleri", href: "/urunler/rulo-poset" },
     { name: "Kağıt Çeşitleri", href: "/urunler/kagit-cesitleri" },
-    { name: "Kurbanlık Poşet Çeşitleri", href: "/urunler/kurbanlik-poset" }
+    { name: "Kurbanlık Poşet Çeşitleri", href: "/urunler/kurbanlik-poset" },
+    { name: "Strafor Köpük Kasalar", href: "/urunler/kopuk-kasa" }
 ];
 
 export default function ProductsPage() {
