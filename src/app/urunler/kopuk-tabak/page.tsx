@@ -41,7 +41,12 @@ export default function KopukTabakPage() {
             category: "Diğer Köpük Tabaklar & Kaplar",
             items: [
                 "Mod 16 Turuncu Köpük Tabak",
-                "Mod 1 Turuncu Köpük Tabak",
+                "Mod 1 Turuncu Köpük Tabak"
+            ]
+        },
+        {
+            category: "Strafor Köpük Kasalar",
+            items: [
                 "Strafor Köpük Kasa 5kg",
                 "Strafor Köpük Kasa 10kg",
                 "Strafor Köpük Kasa 15kg",
