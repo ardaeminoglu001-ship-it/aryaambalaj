@@ -9,7 +9,7 @@ import { motion } from "framer-motion";
 export default function KurbanlikPosetPage() {
     const products = [
         {
-            category: "Branda & Genel Kesim Poşetler",
+            category: "Branda Çeşitleri",
             items: [
                 "Naylon Branda (Çiften 3x1)"
             ]
