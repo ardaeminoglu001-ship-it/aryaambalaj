@@ -23,7 +23,8 @@ const categories = [
     { name: "Rulo Poşet Çeşitleri", href: "/urunler/rulo-poset" },
     { name: "Kağıt Çeşitleri", href: "/urunler/kagit-cesitleri" },
     { name: "Kurbanlık Poşet Çeşitleri", href: "/urunler/kurbanlik-poset" },
-    { name: "Strafor Köpük Kasalar", href: "/urunler/kopuk-kasa" }
+    { name: "Strafor Köpük Kasalar", href: "/urunler/kopuk-kasa" },
+    { name: "Servis ve Sunum Ürünleri", href: "/urunler/servis-ve-sunum" }
 ];
 
 export default function ProductsPage() {

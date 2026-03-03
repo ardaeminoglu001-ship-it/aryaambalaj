@@ -6,22 +6,23 @@ import { ArrowLeft, MessageCircle } from "lucide-react";
 import Link from "next/link";
 import { motion } from "framer-motion";
 
-export default function KagitCesitleriPage() {
+export default function ServisVeSunumPage() {
     const products = [
         {
-            category: "Ambalaj Kağıtları",
+            category: "Kağıt Sunum Ürünleri",
             items: [
-                "Seka Ambalaj Kağıdı",
-                "A4 Fotokopi Kağıdı"
+                "Amerikan Servis Kağıdı",
+                "Çatal-Bıçak Kılıfı",
+                "Dole Tabak Altlıkları",
+                "Dole Bardak Altlıkları"
             ]
         },
         {
-            category: "Makbuz & Fişler",
+            category: "Kokteyl & Karıştırıcılar",
             items: [
-                "Sipariş Fişi (Düz)",
-                "Sipariş Fişi (Otokopili)",
-                "Apartman Gider Makbuzu",
-                "Çaycı Fişi"
+                "Ahşap Çay Karıştırıcı",
+                "Plastik Çay Karıştırıcı",
+                "Jelatinli Kürdan"
             ]
         }
     ];
@@ -37,7 +38,7 @@ export default function KagitCesitleriPage() {
             <Navbar />
 
             <main className="flex-grow py-12 md:py-20 px-4 md:px-8 lg:px-12">
-                <div className="max-w-6xl mx-auto">
+                <div className="max-w-5xl mx-auto">
                     {/* Back Link */}
                     <div className="mb-8">
                         <Link
@@ -57,10 +58,10 @@ export default function KagitCesitleriPage() {
                         className="text-center mb-16"
                     >
                         <h1 className="text-4xl md:text-5xl font-serif font-bold text-gray-900 mb-6 tracking-tight">
-                            Kağıt Çeşitleri
+                            Servis ve Sunum Ürünleri
                         </h1>
                         <p className="text-lg text-gray-600 font-sans max-w-2xl mx-auto">
-                            İşletmeleriniz için yüksek kaliteli sargı, sunum kağıtları ve otokopili/düz sipariş fişleri & hesap makbuzları.
+                            Restoran ve kafe masalarınızı şıklaştıracak Amerikan servisleri, kılıflar, altlıklar ve hijyenik karıştırıcı & kürdan çözümleri.
                         </p>
                     </motion.div>
 
