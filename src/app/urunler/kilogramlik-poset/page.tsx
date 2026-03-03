@@ -11,6 +11,7 @@ export default function KilogramlikPosetPage() {
         { brand: "Aybal", types: ["Büyük Boy", "Orta Boy", "Küçük Boy", "Battal Boy"] },
         { brand: "Nehir", types: ["Küçük Boy", "Orta Boy", "Büyük Boy", "Battal Boy"] },
         { brand: "Naksan", types: ["Süper Mini", "Yeni Mini", "Küçük Boy", "Orta Boy", "Büyük Boy", "Battal Boy"] },
+        { brand: "Siyah", types: ["Küçük Boy", "Orta Boy", "Büyük Boy", "Battal Boy", "Ara Jumbo Boy", "Jumbo Boy"] },
     ];
 
     const handleWhatsAppClick = (productName: string) => {
@@ -52,7 +53,7 @@ export default function KilogramlikPosetPage() {
                     </motion.div>
 
                     {/* Products Grid */}
-                    <div className="grid lg:grid-cols-3 gap-8 mb-16">
+                    <div className="grid lg:grid-cols-2 gap-8 mb-16">
                         {products.map((brandGroup, index) => (
                             <motion.div
                                 key={index}
