@@ -80,13 +80,19 @@ export default function AdetliPosetPage() {
                                 <div className="p-4 sm:p-6 flex-grow flex flex-col">
                                     <ul className="space-y-4 flex-grow mb-4">
                                         {group.items.map((item, itemIndex) => (
-                                            <li key={itemIndex} className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 p-4 rounded-xl hover:bg-zinc-50 transition-colors border border-transparent hover:border-zinc-100 shadow-sm sm:shadow-none bg-zinc-50/50 sm:bg-transparent">
-                                                <span className="font-semibold text-gray-800 block text-center sm:text-left">
-                                                    {item}
-                                                </span>
+                                            <li key={itemIndex} className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 p-4 rounded-xl hover:bg-zinc-50 transition-colors border border-transparent hover:border-zinc-100 shadow-sm sm:shadow-none bg-zinc-50/50 sm:bg-transparent group">
+                                                <div className="flex flex-row items-center gap-4 flex-1">
+                                                    {/* Resim Eklenebilir Rozet (Placeholder) */}
+                                                    <div className="w-12 h-12 rounded-full bg-gray-200 shrink-0 shadow-inner flex items-center justify-center overflow-hidden relative group-hover:bg-primary-50 transition-all">
+                                                    </div>
+
+                                                    <span className="font-semibold text-gray-800 leading-snug">
+                                                        {item}
+                                                    </span>
+                                                </div>
                                                 <button
                                                     onClick={() => handleWhatsAppClick(item)}
-                                                    className="inline-flex items-center justify-center gap-2 px-5 py-2.5 bg-green-50 text-green-700 hover:bg-green-100 hover:text-green-800 rounded-lg text-sm font-semibold transition-colors w-full sm:w-auto"
+                                                    className="inline-flex items-center justify-center gap-2 px-5 py-2.5 bg-green-50 text-green-700 hover:bg-green-100 hover:text-green-800 rounded-lg text-sm font-semibold transition-colors w-full sm:w-auto shrink-0 mt-2 sm:mt-0"
                                                 >
                                                     <MessageCircle className="w-5 h-5" />
                                                     Fiyat Sor
