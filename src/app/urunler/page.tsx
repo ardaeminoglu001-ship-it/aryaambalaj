@@ -19,7 +19,8 @@ const categories = [
     { name: "Çöp Poşetleri", href: "/urunler/cop-posetleri" },
     { name: "Takviyeli Poşet Çeşitleri", href: "/urunler/takviyeli-poset" },
     { name: "Buzdolabı & Kilitli Poşet", href: "/urunler/buzdolabi-kilitli-poset" },
-    { name: "Streç Film Çeşitleri", href: "/urunler/strec-film" }
+    { name: "Streç Film Çeşitleri", href: "/urunler/strec-film" },
+    { name: "Rulo Poşet Çeşitleri", href: "/urunler/rulo-poset" }
 ];
 
 export default function ProductsPage() {
