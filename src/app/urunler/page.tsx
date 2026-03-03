@@ -17,7 +17,8 @@ const categories = [
     { name: "Plastik Tabak Çeşitleri", href: "/urunler/plastik-tabak" },
     { name: "Çatal-Kaşık Çeşitleri", href: "/urunler/catal-kasik" },
     { name: "Çöp Poşetleri", href: "/urunler/cop-posetleri" },
-    { name: "Takviyeli Poşet Çeşitleri", href: "/urunler/takviyeli-poset" }
+    { name: "Takviyeli Poşet Çeşitleri", href: "/urunler/takviyeli-poset" },
+    { name: "Buzdolabı & Kilitli Poşet", href: "/urunler/buzdolabi-kilitli-poset" }
 ];
 
 export default function ProductsPage() {
