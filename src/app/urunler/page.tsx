@@ -20,7 +20,8 @@ const categories = [
     { name: "Takviyeli Poşet Çeşitleri", href: "/urunler/takviyeli-poset" },
     { name: "Buzdolabı & Kilitli Poşet", href: "/urunler/buzdolabi-kilitli-poset" },
     { name: "Streç Film Çeşitleri", href: "/urunler/strec-film" },
-    { name: "Rulo Poşet Çeşitleri", href: "/urunler/rulo-poset" }
+    { name: "Rulo Poşet Çeşitleri", href: "/urunler/rulo-poset" },
+    { name: "Kağıt Çeşitleri", href: "/urunler/kagit-cesitleri" }
 ];
 
 export default function ProductsPage() {
