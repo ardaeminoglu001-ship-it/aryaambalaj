@@ -31,6 +31,7 @@ export async function POST(req: NextRequest) {
 
         return NextResponse.json(newCategory, { status: 201 });
     } catch (error) {
-        return NextResponse.json({ error: "Kategori oluşturulamadı veya isim kullanılıyor." }, { status: 500 });
+        console.error("Kategori Ekleme Hatası:", error);
+        return NextResponse.json({ error: "Kategori oluşturulamadı veya isim kullanılıyor.", details: String(error) }, { status: 500 });
     }
 }
