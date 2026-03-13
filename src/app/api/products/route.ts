@@ -16,14 +16,8 @@ export async function GET() {
 
 // Yeni Ürün Ekle
 export async function POST(req: NextRequest) {
-    let body;
     try {
-        body = await req.json();
-    } catch (e) {
-        return NextResponse.json({ error: "Geçersiz veriler gönderildi (JSON hatası)." }, { status: 400 });
-    }
-
-    try {
+        const body = await req.json();
         const { name, description, categoryId, imageUrl } = body;
 
         if (!name || !categoryId) {
@@ -40,7 +34,16 @@ export async function POST(req: NextRequest) {
         });
 
         return NextResponse.json(newProduct, { status: 201 });
-    } catch (error) {
-        return NextResponse.json({ error: "Ürün eklenemedi." }, { status: 500 });
+    } catch (error: any) {
+        console.error("Ürün Ekleme Hatası:", error);
+        
+        if (error instanceof SyntaxError) {
+             return NextResponse.json({ error: "Geçersiz veriler gönderildi (JSON hatası)." }, { status: 400 });
+        }
+
+        return NextResponse.json({ 
+            error: "Ürün eklenemedi.", 
+            details: error?.message || String(error) 
+        }, { status: 500 });
     }
 }

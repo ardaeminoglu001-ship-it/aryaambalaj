@@ -15,14 +15,8 @@ export async function GET() {
 
 // Yeni Kategori Ekle
 export async function POST(req: NextRequest) {
-    let body;
     try {
-        body = await req.json();
-    } catch (e) {
-        return NextResponse.json({ error: "Geçersiz veriler gönderildi (JSON hatası)." }, { status: 400 });
-    }
-
-    try {
+        const body = await req.json();
         const { name, slug } = body;
 
         if (!name || !slug) {
@@ -34,8 +28,17 @@ export async function POST(req: NextRequest) {
         });
 
         return NextResponse.json(newCategory, { status: 201 });
-    } catch (error) {
+    } catch (error: any) {
         console.error("Kategori Ekleme Hatası:", error);
-        return NextResponse.json({ error: "Kategori oluşturulamadı veya isim kullanılıyor.", details: String(error) }, { status: 500 });
+        
+        // Eğer hata JSON parse hatasıysa
+        if (error instanceof SyntaxError) {
+             return NextResponse.json({ error: "Geçersiz veriler gönderildi (JSON hatası)." }, { status: 400 });
+        }
+
+        return NextResponse.json({ 
+            error: "Kategori oluşturulamadı veya isim kullanılıyor.", 
+            details: error?.message || String(error) 
+        }, { status: 500 });
     }
 }
