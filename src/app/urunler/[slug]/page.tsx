@@ -1,11 +1,9 @@
-import { PrismaClient } from "@prisma/client";
+import { prisma } from "@/lib/prisma";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import { ArrowLeft, MessageCircle, Image as ImageIcon } from "lucide-react";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-
-const prisma = new PrismaClient();
 
 // Parametreyi Next.js'ten alır (Örn: kopuk-tabak, catal-kasik)
 export default async function CategoryPage({ params }: { params: Promise<{ slug: string }> }) {
