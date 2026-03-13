@@ -16,8 +16,14 @@ export async function GET() {
 
 // Yeni Ürün Ekle
 export async function POST(req: NextRequest) {
+    let body;
     try {
-        const body = await req.json();
+        body = await req.json();
+    } catch (e) {
+        return NextResponse.json({ error: "Geçersiz veriler gönderildi (JSON hatası)." }, { status: 400 });
+    }
+
+    try {
         const { name, description, categoryId, imageUrl } = body;
 
         if (!name || !categoryId) {
