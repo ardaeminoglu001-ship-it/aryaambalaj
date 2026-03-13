@@ -1,35 +1,21 @@
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import Link from "next/link";
+import { PrismaClient } from "@prisma/client";
+
+const prisma = new PrismaClient();
 
 export const metadata = {
     title: "Ürün Grupları | Arya Ambalaj",
     description: "Arya Ambalaj'ın geniş ürün yelpazesini inceleyin. Köpük tabaklardan karton bardaklara kadar tüm toptan ambalaj çözümleri.",
 };
 
-const categories = [
-    { name: "Köpük Tabak Çeşitleri", href: "/urunler/kopuk-tabak" },
-    { name: "Karton Bardak Çeşitleri", href: "/urunler/karton-bardak" },
-    { name: "Viza Rulosu", href: "/urunler/viza-rulosu" },
-    { name: "Kilogramlık Poşet Çeşitleri", href: "/urunler/kilogramlik-poset" },
-    { name: "Adetli Poşet", href: "/urunler/adetli-poset" },
-    { name: "Pastancılık Çeşitleri", href: "/urunler/pastancilik-cesitleri" },
-    { name: "Plastik Tabak Çeşitleri", href: "/urunler/plastik-tabak" },
-    { name: "Çatal-Kaşık Çeşitleri", href: "/urunler/catal-kasik" },
-    { name: "Çöp Poşetleri", href: "/urunler/cop-posetleri" },
-    { name: "Takviyeli Poşet Çeşitleri", href: "/urunler/takviyeli-poset" },
-    { name: "Buzdolabı & Kilitli Poşet", href: "/urunler/buzdolabi-kilitli-poset" },
-    { name: "Streç Film Çeşitleri", href: "/urunler/strec-film" },
-    { name: "Rulo Poşet Çeşitleri", href: "/urunler/rulo-poset" },
-    { name: "Kağıt Çeşitleri", href: "/urunler/kagit-cesitleri" },
-    { name: "Kurbanlık Poşet Çeşitleri", href: "/urunler/kurbanlik-poset" },
-    { name: "Strafor Köpük Kasalar", href: "/urunler/kopuk-kasa" },
-    { name: "Servis ve Sunum Ürünleri", href: "/urunler/servis-ve-sunum" },
-    { name: "Karton Tabak Çeşitleri", href: "/urunler/karton-tabak" },
-    { name: "Yemek Setleri", href: "/urunler/yemek-setleri" }
-];
+export default async function ProductsPage() {
+    // Veritabanından tüm kategorileri listele
+    const categories = await prisma.category.findMany({
+        orderBy: { createdAt: "desc" }
+    });
 
-export default function ProductsPage() {
     return (
         <div className="min-h-screen flex flex-col font-sans bg-zinc-50">
             <Navbar />
@@ -48,23 +34,15 @@ export default function ProductsPage() {
 
                     {/* Category Grid */}
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 md:gap-8">
-                        {categories.map((category, index) => {
-                            const CardContent = (
-                                <div className="bg-white rounded-lg shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 p-8 flex items-center justify-center text-center cursor-pointer border border-gray-100 group h-full">
-                                    <h3 className="text-xl font-bold text-gray-800 group-hover:text-primary-800 transition-colors">
-                                        {category.name}
-                                    </h3>
-                                </div>
-                            );
-
-                            return category.href ? (
-                                <Link href={category.href} key={index} className="block h-full block">
-                                    {CardContent}
+                        {categories.map((category: any) => {
+                            return (
+                                <Link href={`/urunler/${category.slug}`} key={category.id} className="block h-full">
+                                    <div className="bg-white rounded-lg shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 p-8 flex items-center justify-center text-center cursor-pointer border border-gray-100 group h-full">
+                                        <h3 className="text-xl font-bold text-gray-800 group-hover:text-primary-800 transition-colors">
+                                            {category.name}
+                                        </h3>
+                                    </div>
                                 </Link>
-                            ) : (
-                                <div key={index} className="h-full">
-                                    {CardContent}
-                                </div>
                             );
                         })}
                     </div>
