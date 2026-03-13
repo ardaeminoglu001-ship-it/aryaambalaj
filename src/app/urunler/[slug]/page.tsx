@@ -8,11 +8,12 @@ import { notFound } from "next/navigation";
 const prisma = new PrismaClient();
 
 // Parametreyi Next.js'ten alır (Örn: kopuk-tabak, catal-kasik)
-export default async function CategoryPage({ params }: { params: { slug: string } }) {
+export default async function CategoryPage({ params }: { params: Promise<{ slug: string }> }) {
+    const { slug } = await params;
 
     // 1- İlgili Kategoriyi ve ona ait ürünleri bul
     const category = await prisma.category.findUnique({
-        where: { slug: params.slug },
+        where: { slug: slug },
         include: {
             products: true
         }
