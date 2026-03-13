@@ -80,7 +80,17 @@ export default function AdminDashboard() {
         e.preventDefault();
 
         // Slug generation from name
-        const slug = newCategoryName.toLowerCase().replace(/ /g, '-').replace(/[^\w-]+/g, '');
+        const turkishMap: { [key: string]: string } = {
+            'ç': 'c', 'ğ': 'g', 'ı': 'i', 'ö': 'o', 'ş': 's', 'ü': 'u',
+            'Ç': 'c', 'Ğ': 'g', 'İ': 'i', 'Ö': 'o', 'Ş': 's', 'Ü': 'u',
+            ' ': '-'
+        };
+        const slug = newCategoryName
+            .replace(/[çğıöşüÇĞİÖŞÜ ]/g, match => turkishMap[match] || '-')
+            .toLowerCase()
+            .replace(/[^a-z0-9-]/g, '')
+            .replace(/-+/g, '-')
+            .replace(/^-|-$/g, '');
 
         try {
             const res = await fetch("/api/categories", {
@@ -95,10 +105,11 @@ export default function AdminDashboard() {
                 setCategoryModalOpen(false);
                 fetchCategories();
             } else {
-                toast.error("Hata oluştu, kategori adı kullanılıyor olabilir.");
+                const data = await res.json();
+                toast.error(data.details ? `Hata: ${data.details}` : data.error || "Hata oluştu.");
             }
-        } catch (e) {
-            toast.error("Bağlantı hatası.");
+        } catch (e: any) {
+            toast.error(e.message || "Bağlantı hatası.");
         }
     };
 
